@@ -1,0 +1,6 @@
+.mvn/
+.idea/
+# target/
+.vscode/
+Dockerfile
+docker-compose.yml
