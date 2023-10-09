@@ -18,7 +18,7 @@ public class ExcelToDatabase {
 
     public  String convertExcelToDatabase(String tableName, String path) throws IOException, SQLException {
         tableName = Utils.convertSpaceToUnderscore(tableName);
-        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/test_db", "huor", "Huor1234");
+        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/test_db", "username", "password");
         Statement statement = connection.createStatement();
         statement.execute("DROP TABLE IF EXISTS " + tableName);
         
